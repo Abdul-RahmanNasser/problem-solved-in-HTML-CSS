@@ -1,0 +1,76 @@
+/* Assignment 01 */
+/* html <title> tag */
+.title {
+}
+
+/* html <div id="nav"> tag */
+#nav {
+}
+
+/* html <div> tag */
+div {
+}
+
+/* html <h2> tag */
+h2 {
+}
+
+/* 
+Assignment 05 
+valid
+*/
+._user-name {
+}
+
+/* valid */
+.-user-name {
+}
+
+/* valid */
+.-user-name {
+}
+
+/*
+not valid
+.1user-name {
+}
+
+not valid 
+.@user-name {
+}
+
+not valid 
+.user@name {
+}
+*/
+
+/* valid */
+._user10name {
+}
+
+/* valid */
+.u {
+}
+
+/*
+Assignment 06 
+bad
+*/
+.USERNAME {
+}
+
+/* bad */
+.UserName {
+}
+
+/* good */
+.user-name {
+}
+
+/* bad */
+.userName {
+}
+
+/* good */
+.usernameprofile {
+}

@@ -1,0 +1,50 @@
+/* Assignment 01 */
+div {
+    outline: solid 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Shape-1,
+.Shape-2,
+.Shape-3 {
+    outline-color: black;
+    display: inline-block;
+}
+
+.Shape-1 {
+    border: 5px solid red;
+}
+
+.Shape-2 {
+    border-style: solid;
+    border-color: blue green;
+}
+
+.Shape-3 {
+    border-style: dashed;
+    border-color: red green blue yellow;
+}
+
+/* Assignment 02 */
+.first {
+    border-color: red;
+}
+
+.second {
+    visibility: hidden;
+}
+
+.third {
+    border-color: green;
+}
+
+.first,
+.second,
+.third {
+    background-color: #DDD;
+    width: 400px;
+    padding-left: 10px;
+    outline-color: #DDD;
+    border-left-style: solid;
+}

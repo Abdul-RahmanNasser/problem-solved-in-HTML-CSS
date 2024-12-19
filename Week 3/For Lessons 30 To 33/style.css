@@ -1,0 +1,173 @@
+/* Assignment 01 */
+/* div {
+    position: absolute;
+} */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.green , .red , .blue , .black {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.green {
+    top: 40px;
+    left: 40px;
+    background-color: green;
+    z-index: 2;
+}
+
+.red {
+    top: 60px;
+    left: 60px;
+    background-color: red;
+    z-index: 3;
+}
+
+.blue {
+    top: 20px;
+    left: 20px;
+    background-color: blue;
+    z-index: 1;
+}
+
+.black {
+    top: 40px;
+    left: 20px;
+    background-color: black;
+}
+
+/* Assignment 02 */
+.assignment-2 {
+    position: absolute;
+    margin-top: 180px;
+    width: 400px;
+    text-align: center;
+    background-color: #ddd;
+    border: 3px solid;
+    border-color: red blue;
+    padding: 20px;
+}
+
+.top-left , .bottom-left , .top-right , .bottom-right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-right: 3px solid red;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    border-right: 3px solid red;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    margin-top: -15px;
+    margin-right: -15px;
+    border-left: 3px solid red;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    margin-bottom: -15px;
+    margin-right: -15px;
+    background-color: blue;
+    border-left: 3px solid red;
+}
+
+/* Assignment 03 */
+.ul-1 {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+ul li {
+    background-color: #ddd;
+    margin: 20px;
+    padding: 20px;
+}
+
+.ol-1 li , .ol-2 li {
+    background-color: #eee;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.ol-1 li {
+    list-style-type: decimal;
+}
+
+.ol-2 {
+    list-style-type: upper-roman;
+}
+
+li ul li {
+    background-color: #eee;
+    margin: 10px 0;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+/* Assignment 04 */
+table {
+    width: 700px;
+    background-color: #ddd;
+    background-position: center;
+    text-align: center;
+    border-spacing: 0;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+img {
+    width: 50px;
+    border: 3px solid white;
+}
+
+.span-1 {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(0, 187, 255, 0.591);
+    color: white;
+}
+
+.span-2 {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(239, 79, 84, 0.889);
+    color: white;
+}

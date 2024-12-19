@@ -1,0 +1,36 @@
+/* Assignment 01 */
+.div-1 {
+    text-shadow: 0.5px 0.5px 0 red, 1px 1px 0 rgb(21, 238, 238), 1.5px 1.5px 0 blueviolet;
+}
+
+/* Assignment 02 */
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+/* Assignment 03 */
+.div-2 {
+    width: 400px;
+    background-color:rgba(128, 128, 128, 0.164) ;
+    padding: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Assignment 04 */
+a {
+    text-decoration-line: none;
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+    background-color: rgb(59, 164, 143);
+    width: 100px;
+    padding: 5% 0;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.278);
+    color: white;
+}

@@ -1,0 +1,21 @@
+p {
+    width: 500px;
+    height: 30px;
+    background-color: #eee;
+    padding: 25px;
+    margin-top: 10px;
+    margin-left: 80px;
+    text-align: center;
+    counter-increment: members-counter;
+    border-right: 5px solid red;
+}
+
+p::before {
+    content: counter(members-counter);
+    position: relative;
+    background-color: red;
+    padding: 30px 20px 31px 20px;
+    left: -132px;
+    top: 17%;
+    text-align: center;
+}

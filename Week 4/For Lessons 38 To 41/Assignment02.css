@@ -1,0 +1,10 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 15px 40px;
+    border-top-left-radius: 15px 40px;
+    box-shadow: 0 0 20px -5px black inset;
+}
