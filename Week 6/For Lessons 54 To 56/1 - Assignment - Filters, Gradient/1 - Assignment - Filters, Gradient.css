@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    width: 600px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    background: linear-gradient(
+        to right,
+        rgb(255, 102, 0) 1%,
+        #eee 1%,
+        #eee 99%,
+        purple 99%
+    );
+    position: relative;
+}
+
+div::first-letter {
+    color: rgb(255, 102, 0);
+
+}
+
+div::after {
+    content: "";
+    height: 5px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        to right,
+        rgb(255, 102, 0) 20%,
+        rgb(0, 153, 255) 20%,
+        rgb(0, 153, 255) 40%,
+        rgb(71, 197, 71) 40%,
+        rgb(71, 197, 71) 60%,
+        rgb(221, 30, 62) 60%,
+        rgb(221, 30, 62) 80%,
+        purple 80%
+    );
+}
+
+div::before {
+    content: "";
+    height: 5px;
+    width: 600px;
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    background: linear-gradient(
+        to right,
+        rgb(255, 102, 0) 20%,
+        rgb(0, 153, 255) 20%,
+        rgb(0, 153, 255) 40%,
+        rgb(71, 197, 71) 40%,
+        rgb(71, 197, 71) 60%,
+        rgb(221, 30, 62) 60%,
+        rgb(221, 30, 62) 80%,
+        purple 80%
+    );
+}

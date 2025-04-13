@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(219, 217, 217);
+    top: 40px;
+    -webkit-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    -ms-transition: top 0.5s;
+    -o-transition: top 0.5s;
+    transition: top 0.5s;
+}
+
+.parent:hover {
+    top: 0;
+}
+
+.child {
+    background-color: rgb(136, 132, 132);
+    position: absolute;
+    margin-top: 30px;
+    padding: 20px;
+    top: 40px;
+    -webkit-transition: top 0.5s 0.5s;
+    -moz-transition: top 0.5s 0.5s;
+    -ms-transition: top 0.5s 0.5s;
+    -o-transition: top 0.5s 0.5s;
+    transition: top 0.5s 0.5s;
+}
+
+.parent:hover .child {
+    top: 80px;
+}

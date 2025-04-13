@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.parent {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+    justify-content: space-between;
+}
+
+.one, .two, .three {
+    display: flex;
+    background-color: darkcyan;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.two {
+    width: 50%;
+}
+
+.one, .three {
+    width: 5%;
+    align-self: flex-end;
+}

@@ -1,0 +1,16 @@
+div {
+    background-color: rgba(158, 158, 158, 0.247) !important;
+    color: rgba(158, 158, 158, 0.247) !important;
+    border: none !important;
+    font-size: 0 !important;
+    width: 400px;
+    text-align: center;
+}
+
+div::after {
+    content: "Elzero";
+    font-size: 40px;
+    color: black;
+    font-family: sans-serif;
+    display: inline-block;
+}

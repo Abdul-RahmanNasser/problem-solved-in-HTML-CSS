@@ -1,0 +1,38 @@
+:root {
+    --flex: flex;
+    --center: center;
+    --0: 0;
+    --1fr: 1fr;
+    --1: 1%;
+    --4: 4%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: var(--0);
+    margin: var(--0);
+}
+
+body {
+    display: var(--flex);
+    justify-content: var(--center);
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: var(--1) var(--1fr) var(--1fr) var(--1);
+    grid-template-rows: var(--1fr) var(--4);
+    gap: var(--4) 2%;
+}
+
+.grid div {
+    background-color:dimgrey;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    color: white;
+}

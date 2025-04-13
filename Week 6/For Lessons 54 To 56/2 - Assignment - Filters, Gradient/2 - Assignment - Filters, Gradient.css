@@ -1,0 +1,42 @@
+:root {
+    --10px: 10px;
+    --flex: flex;
+    --0: 0;
+    --center: center;
+    --600px: 600px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: var(--0);
+    margin: var(--0);
+}
+
+body {
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    height: 100vh;
+}
+
+div {
+    display: var(--flex);
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: var(--10px);
+    border: none;
+    background: #eee;
+    padding: var(--10px);
+    width: var(--600px);
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 153, 255) 50%,
+        rgb(221, 30, 62) 50%
+    );
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    caret-color: red;
+}

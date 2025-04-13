@@ -1,0 +1,57 @@
+/* 
+    .class {
+    matrix(3, 0.2679, 0, 3, 20, 100);
+    scaleX(3)
+    skewX(0.2679)
+    skewY(0)
+    scaleY(3)
+    translateX(20)
+    translateY(100)
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color:slategrey;
+    position: relative;
+    margin: 300px auto;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 5px solid black;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    left: 14.5%;
+    bottom: 64.5%;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 70%;
+    height: 70%;
+    background-color: black;
+    color: white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+div::after {
+    content: "Elzero";
+    position: absolute;
+    padding: 5px;
+    color: white;
+    font-family: sans-serif;
+}

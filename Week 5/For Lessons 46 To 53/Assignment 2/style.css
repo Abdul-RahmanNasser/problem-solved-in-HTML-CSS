@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-flow: wrap;
+    font-size: x-small;
+}
+
+.parent div {
+    display: flex;
+    background-color: rgb(238, 79, 111);
+    color: white;
+    width: 30%;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: sans-serif;
+}

@@ -1,0 +1,84 @@
+:root {
+    --backgroundColor: #ddd;
+    --unit1: 10px;
+    --smallPercentage: 15%;
+    --bigPercentage: 84%;
+    --display: flex;
+    --center: center;
+    --sixtyPercentage: 64%;
+    --value0: 0;
+    --spaceBetween: space-between;
+}
+
+* {
+    margin: var(--value0);
+    padding: var(--value0);
+    box-sizing: border-box;
+}
+
+.page {
+    background-color: #eee;
+    font-family: sans-serif;
+    display: var(--display);
+    flex-direction: column;
+    padding: var(--unit1);
+    height: 40vh;
+    justify-content: var(--spaceBetween);
+}
+
+header {
+    display: var(--display);
+    justify-content: var(--spaceBetween);
+    flex-basis: var(--smallPercentage);
+}
+
+.logo {
+    background-color: var(--backgroundColor);
+    flex-basis: var(--smallPercentage);
+    padding: var(--unit1);
+    display: var(--display);
+    justify-content: var(--center);
+    align-items: var(--center);
+    height: 100%;
+}
+
+.links {
+    display: var(--display);
+    flex-basis: var(--bigPercentage);
+    list-style: none;
+    justify-content: flex-end;
+    background-color: var(--backgroundColor);
+    align-items: var(--center);
+    padding: var(--unit1);
+}
+
+.links li {
+    margin-left: var(--unit1);
+}
+
+main {
+    flex-basis: var(--sixtyPercentage);
+    display: var(--display);
+    justify-content: var(--spaceBetween);
+}
+
+.content {
+    flex-basis: var(--sixtyPercentage);
+    background-color: var(--backgroundColor);
+    padding: var(--unit1);
+}
+
+aside {
+    flex-basis: 35%;
+    background-color: var(--backgroundColor);
+    padding: var(--unit1);
+}
+
+footer {
+    display: var(--display);
+    justify-content: var(--spaceBetween);
+    flex-basis: var(--smallPercentage);
+    background-color: var(--backgroundColor);
+    align-items: var(--center);
+    padding: var(--unit1);
+}

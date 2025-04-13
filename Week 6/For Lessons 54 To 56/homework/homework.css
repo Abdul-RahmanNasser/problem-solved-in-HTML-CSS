@@ -1,0 +1,38 @@
+div {
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px;
+  }
+  div:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    height: 10px;
+    background-image: linear-gradient(
+      to right,
+      #2980b9 10%,
+      #27ae60 10%,
+      #27ae60 20%,
+      #d35400 20%,
+      #d35400 30%,
+      #8e44ad 30%,
+      #8e44ad 40%,
+      #c0392b 40%,
+      #c0392b 50%,
+      #2980b9 50%,
+      #2980b9 60%,
+      #27ae60 60%,
+      #27ae60 70%,
+      #d35400 70%,
+      #d35400 80%,
+      #8e44ad 80%,
+      #8e44ad 90%,
+      #c0392b 90%
+    );
+  }

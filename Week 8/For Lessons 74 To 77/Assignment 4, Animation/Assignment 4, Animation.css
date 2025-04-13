@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 200px auto;
+}
+
+.parent {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.E, .L {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(7, auto);
+    width: 300px;
+    height: 400px;
+}
+
+.E div, .L div{
+    background-color: dimgray;
+}
+
+.parent::before, .parent::after {
+    content: "";
+    width: 50px;
+    height: 40px;
+    background-color: orange;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+.parent::before {
+    animation-name: move-in-E;
+    animation-duration: 6s;
+    left: 240px;
+    top: 10px;
+}
+
+.parent::after {
+    animation-name: move-in-L;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+}
+
+.one {
+    grid-area: 1/1/1/5;
+}
+
+.two {
+    grid-area: 2/1/4/1;
+}
+
+.three {
+    grid-area: 4/1/5/5;
+}
+
+.four {
+    grid-area: 5/1/7/1;
+}
+
+.five {
+    grid-area: 7/1/7/5;
+}
+
+@keyframes move-in-E {
+    10% {
+        left: 10px;
+        top: 10px;
+    }
+
+    20% {
+        left: 10px;
+        top: 180px;
+    }
+
+    30% {
+        left: 240px;
+        top: 180px;
+    }
+
+    40% {
+        left: 10px;
+        top: 180px;
+    }
+
+    50% {
+        left: 10px;
+        top: 350px;
+    }
+
+    60% {
+        left: 240px;
+        top: 350px;
+    }
+
+    70% {
+        left: 10px;
+        top: 350px;
+    }
+
+    80% {
+        left: 10px;
+        top: 10px;
+    }
+}
+
+.first {
+    grid-area: 1/1/7/1;
+}
+
+.second {
+    grid-area: 7/1/7/5;
+}
+
+@keyframes move-in-L {
+    25% {
+        opacity: 1;
+        right: 240px;
+        bottom: 10px;
+    }
+
+    50% {
+        opacity: 1;
+        right: 240px;
+        bottom: 350px;
+    }
+
+    75% {
+        opacity: 0;
+        right: 240px;
+        bottom: 350px;
+    }
+}

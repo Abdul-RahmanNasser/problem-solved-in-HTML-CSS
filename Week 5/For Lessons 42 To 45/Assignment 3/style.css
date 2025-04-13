@@ -1,0 +1,8 @@
+div {
+    color: var(--mainColor, red);
+    padding: var(--mainPadding, 10px);
+    border: calc(var(--mainPadding, 10px) - 7px) solid var(--mainColor, black);
+    font-family: sans-serif;
+    font-size: larger;
+    margin: 20px;
+}

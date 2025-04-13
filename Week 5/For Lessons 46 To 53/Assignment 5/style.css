@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parent div {
+    display: flex;
+    flex-basis: calc(2*(100%/11));
+    height: 50%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    background-color: chocolate;
+    margin: 0 calc(4*(100%/11)) 0 calc(3*(100%/11));
+}
+
+.two {
+    background-color: limegreen;
+    order: 1;
+    margin: 0 calc(3*(100%/11)) 0 calc(4*(100%/11));
+}
+
+.three {
+    background-color: saddlebrown;
+}
+
+.four {
+    background-color: darkorchid;
+}

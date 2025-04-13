@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 15% auto;
+    gap: 20px 20px;
+}
+
+.grid div {
+    background-color: slategray;
+    color: white;
+}
+
+.grid div:nth-child(-n+6) {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid div:nth-child(1)::before { content: "Element 1"; }
+.grid div:nth-child(2)::before { content: "Element 2"; }
+.grid div:nth-child(3)::before { content: "Element 3"; }
+.grid div:nth-child(4)::before { content: "Element 4"; }
+.grid div:nth-child(5)::before { content: "Element 5"; }
+.grid div:nth-child(6)::before { content: "Element 6"; }
